@@ -11,7 +11,10 @@
 <input type="text" class="form-control" name="title">
 </div>
 <div class="form-group">
-<textarea rows="10" class="form-control" name="body"></textarea>
+<textarea rows="10" class="form-control" name="editor1"></textarea>
+  <script>
+            CKEDITOR.replace( 'editor1' );
+        </script>
 </div>
 
 <input type="submit" class="btn btn-success">

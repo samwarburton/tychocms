@@ -33,8 +33,11 @@ class PostsController extends Controller
 
         $post = new Post;
         $id = Auth::id();
-        $post->title = $request->title;
-        $post->body = $request->body;
+        $clean_title = clean($request->title);
+        $clean_body = clean($request->editor1);
+      
+        $post->title = $clean_title;
+        $post->body = $clean_body;
         $post->user_id = $id;
         $post->save();
 
@@ -56,7 +59,7 @@ class PostsController extends Controller
 
         $post = Post::find($id); 
         $post->title = $request->title;
-        $post->body = $request->body;
+        $post->body = $request->editor1;
         $post->save();
         return redirect('/');
 

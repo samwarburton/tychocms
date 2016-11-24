@@ -12,7 +12,10 @@
 <input type="text" name="title" class="form-control" value="{{$post->title}}">
 </div>
 <div class="form-group">
-<textarea rows="10" name="body" class="form-control">{{$post->body}}</textarea>
+<textarea rows="10" name="editor1" class="form-control">{{$post->body}}</textarea>
+<script>
+            CKEDITOR.replace( 'editor1' );
+        </script>
 </div>
 
 <input type="submit" class="btn btn-success">

@@ -2,6 +2,8 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
+<script src="//cdn.ckeditor.com/4.6.0/standard/ckeditor.js"></script>
+
 </head>
 <body>
 
