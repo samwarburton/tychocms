@@ -34,3 +34,34 @@ body {
 	display: block;
 	margin-top: -10px;
 }
+
+.sidebar {
+	background-color: #42587c;
+	padding-left: 0px;
+	padding-right: 0px;
+	height:100vh;
+	color: white;
+}
+
+.sidebar a {
+	color: white;
+}
+
+.sidebar li:hover {
+	background-color: red;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: #394c6d;
+}
+
+.row {
+	margin-top: -20px;
+}
+
+i {
+	margin-right: 5px;
+}
+
+
+

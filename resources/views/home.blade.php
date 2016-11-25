@@ -2,48 +2,14 @@
 
 @section('content')
 
-<div class="container">
-<div class="col-md-10 recent-posts">
-    <h3>Recent posts</h3>
-    <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Date Created</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-    @foreach($posts as $post)
-    <tr>
-      <th>{{$post->title}}</th>
-      <td>{{$post->user->name}}</td>
-      <td>{{$post->created_at}}</td>
-      <td><a class="btn btn-primary" href="/post/{{$post->id}}/edit">Edit</a></td>
-      <td><form action="/post/{{$post->id}}" method="POST">
-        <input type="hidden" name="_method" value="DELETE">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-        <input type="submit" value="Delete" class="btn btn-danger">
-      </form></td>
-    </tr>
-    @endforeach
-  
-  </tbody>
-</table>
-</div>
-<div class="col-md-2 options">
-    <h4>Options</h4>
 
-        <a href="/post/create">Create new post</a><br>
-        <a>View all posts</a><br>
-        <a>View Blog</a>
-        <a>Add new author</a><br>
-        <a>Settings</a>
+<h1>Welcome there </h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
 
 
 
 
-</div>
-</div>
+
+
 @endsection
